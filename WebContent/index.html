@@ -16,12 +16,23 @@
 <!-- Latest compiled JavaScript -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+	function checkEmpty() {
+		var input = document.forms["searchForm"]["search"].value;
+		if (input == "") {
+			alert('Search field cannot be empty!');
+			return false;
+		}else{
+			return true;
+		}
+	}
+</script>
 
 </head>
 <body>
 	<div class="container">
-		<div class="page-header" style="font-size: 36px; color: #32adff" >WHY NOT
-			Bookstore</div>
+		<div class="page-header" style="font-size: 36px; color: #32adff">WHY
+			NOT Bookstore</div>
 		<nav class="navbar navbar-inverse">
 
 
@@ -43,17 +54,16 @@
 					</ul></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
-			<a class="btn btn-info navbar-btn" href="cart.html">
-				<i class="glyphicon glyphicon-shopping-cart"></i>&nbsp;Cart
+			<a class="btn btn-info navbar-btn" href="cart.html"> <i
+				class="glyphicon glyphicon-shopping-cart"></i>&nbsp;Cart
 			</a>
-			<form class="navbar-form navbar-left" action="search.html">
+						<form class="navbar-form navbar-left" name="searchForm" action="search.html"
+				onsubmit="return checkEmpty()">
+
 				<div class="form-group">
 					<input id="search" type="text" class="form-control"
-						placeholder="Search for books..." required>
-					<script>
-						document.getElementById('search').setCustomValidity(
-								'Search field cannot be empty!');
-					</script>
+						placeholder="Search for books..." >
+					
 					<button type="submit" class="btn btn-default">
 						<i class="glyphicon glyphicon-search"></i>
 					</button>
@@ -62,40 +72,39 @@
 		</nav>
 		<br>
 
-<div class="row">
+		<div class="row">
 
-<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-<div class="well">
-<h3>Best Sellers:</h3>
-<a href="books/ABriefHistoryofTime.html"><h4>A Brief History of Time</h4></a>
-Stephen Hawking
-</div>
-</div>
-<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-<div class="well">
-<h3>New Release:</h3>
-<a href="books/cracking.html"><h4>Cracking the Coding Interview</h4></a>
-Gayle Laakmann McDowell
-</div>
-</div>
-<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-<div class="well">
-<h3>On Sale:</h3>
-<a href="books/ABriefHistoryofTime.html"><h4>A Brief History of Time</h4></a>
-Stephen Hawking
-<br><br>
-<a href="books/ABriefHistoryofTime.html"><h4>Cracking the Coding Interview</h4></a>
-Gayle Laakmann McDowell
-</div>
-</div>
-<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-<div class="well">
-<h3>Coming Soon:</h3>
-<a href="books/ABriefHistoryofTime.html"><h4>Before the Storm</h4></a>
-Christie Golden
-</div>
-</div>
-</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="well">
+					<h3>Best Sellers:</h3>
+					<a href="books/ABriefHistoryofTime.html"><h4>A Brief
+							History of Time</h4></a> Stephen Hawking
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="well">
+					<h3>New Release:</h3>
+					<a href="books/cracking.html"><h4>Cracking the Coding
+							Interview</h4></a> Gayle Laakmann McDowell
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="well">
+					<h3>On Sale:</h3>
+					<a href="books/ABriefHistoryofTime.html"><h4>A Brief
+							History of Time</h4></a> Stephen Hawking <br>
+					<br> <a href="books/ABriefHistoryofTime.html"><h4>Cracking
+							the Coding Interview</h4></a> Gayle Laakmann McDowell
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="well">
+					<h3>Coming Soon:</h3>
+					<a href="books/storm.html"><h4>Before the Storm</h4></a> Christie
+					Golden
+				</div>
+			</div>
+		</div>
 
 
 	</div>

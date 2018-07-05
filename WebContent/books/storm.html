@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Cracking the Coding Interview</title>
+<link rel="stylesheet" href="CSS/Style.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+	function checkEmpty() {
+		var input = document.forms["searchForm"]["search"].value;
+		if (input == "") {
+			alert('Search field cannot be empty!');
+			return false;
+		}else{
+			return true;
+		}
+	}
+</script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="page-header" style="font-size: 36px">WHY NOT
+			Bookstore</div>
+		<nav class="navbar navbar-inverse">
+
+			<ul class="nav navbar-nav"
+				style="font-size: 20px; text-align: center;">
+
+				<li><a href="../index.html">Home</a></li>
+				<li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories
+						<span class="caret"></span>
+				</a>
+					<ul class="dropdown-menu">
+						<li><a href="../politics.html">Politics</a></li>
+						<li><a href="../history.html">History</a></li>
+						<li><a href="../fiction.html">Fiction</a></li>
+						<li><a href="../health.html">Health</a></li>
+						<li><a href="../science.html">Science</a></li>
+						<li><a href="../kids.html">Kids</a></li>
+
+					</ul></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<a class="btn btn-info navbar-btn" href="cart.html"> <i
+				class="glyphicon glyphicon-shopping-cart"></i>&nbsp;Cart
+			</a>
+
+
+			<form class="navbar-form navbar-left" name="searchForm" action="search.html"
+				onsubmit="return checkEmpty()">
+
+				<div class="form-group">
+					<input id="search" type="text" class="form-control"
+						placeholder="Search for books..." >
+					
+					<button type="submit" class="btn btn-default">
+						<i class="glyphicon glyphicon-search"></i>
+					</button>
+				</div>
+			</form>
+		</nav>
+
+
+		<br>
+
+
+		<h2>Before the Storm</h2>
+		<br>
+		<div class="row ">
+
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+				<h5>Christie Golden</h5>
+				<p>
+					<b>Category: Science</b>
+				</p>
+				<img src="../img/storm.jpg" class="img-responsive"> <br>
+				<br>
+			</div>
+			<div class="well col-lg-6 col-md-6 col-sm-4 col-xs-12">
+				<p>NEW YORK TIMES BESTSELLER • An all-new, official prequel
+					novel to The Battle for Azeroth, Blizzard Entertainment's next
+					expansion to the critically acclaimed World of Warcraft videogame.</p>
+				<p>The Horde and the Alliance defeated the demonic Burning
+					Legion, but a dire catastrophe is unfolding deep below the surface
+					of the world. There is a mortal wound in the heart of Azeroth,
+					struck by the sword of the fallen titan Sargeras in a final act of
+					cruelty.</p>
+
+				<p>For Anduin Wrynn, king of Stormwind, and Sylvanas Windrunner,
+					warchief of the Horde and queen of the Forsaken, there is little
+					time to rebuild what remains and even less to mourn what was lost.
+					Azeroth’s devastating wound has revealed a mysterious material
+					known as Azerite. In the right hands, this strange golden substance
+					is capable of incredible feats of creation; in the wrong ones, it
+					could bring forth unthinkable destruction.</p>
+				<p>As Alliance and Horde forces race to uncover the secrets of
+					Azerite and heal the wounded world, Anduin enacts a desperate plan
+					aimed at forging a lasting peace between the factions. Azerite
+					jeopardizes the balance of power, and so Anduin must gain the trust
+					of Sylvanas. But, as ever, the Dark Lady has her own machinations.</p>
+				<p>For peace to be possible, generations of bloodshed and hatred
+					must be brought to an end. But there are truths that neither side
+					is willing to accept and ambitions they are loath to relinquish. As
+					Alliance and Horde alike grasp for the Azerite’s power, their
+					simmering conflict threatens to reignite all-out war-a war that
+					would spell doom for Azeroth.</p>
+
+
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+				<div class="well" style="text-align: center">
+					<h2>Our Price: $25</h2>
+					<h5>Pre-Order</h5>
+					<a class="btn btn-info navbar-btn" href="cart.html"> <i
+						class="glyphicon glyphicon-shopping-cart"></i>&nbsp;Add To Cart
+					</a>
+				</div>
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="well row">
+				<h3>Related Books:</h3>
+				<div class=" col-md-4 col-sm-6 col-xs-12">
+					<a href="books/ABriefHistoryofTime.html"><h4>A Brief
+							History of Time</h4></a> Stephen Hawking
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

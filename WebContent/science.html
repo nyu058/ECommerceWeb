@@ -16,6 +16,17 @@
 <!-- Latest compiled JavaScript -->
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+	function checkEmpty() {
+		var input = document.forms["searchForm"]["search"].value;
+		if (input == "") {
+			alert('Search field cannot be empty!');
+			return false;
+		}else{
+			return true;
+		}
+	}
+</script>
 </head>
 <body>
 	<div class="container">
@@ -44,14 +55,13 @@
 			<a class="btn btn-info navbar-btn" href="cart.html"> <i
 				class="glyphicon glyphicon-shopping-cart"></i>&nbsp;Cart
 			</a>
-			<form class="navbar-form navbar-left" action="/action_page.php">
+						<form class="navbar-form navbar-left" name="searchForm" action="search.html"
+				onsubmit="return checkEmpty()">
+
 				<div class="form-group">
 					<input id="search" type="text" class="form-control"
-						placeholder="Search for books..." required>
-					<script>
-						document.getElementById('search').setCustomValidity(
-								'Search field cannot be empty!');
-					</script>
+						placeholder="Search for books..." >
+					
 					<button type="submit" class="btn btn-default">
 						<i class="glyphicon glyphicon-search"></i>
 					</button>
