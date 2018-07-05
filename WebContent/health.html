@@ -72,9 +72,42 @@
 
 		<br>
 
-
+<div class="container">
         <h5>Categories > Health</h5>
 		<h1>HEALTH</h1>
+		
+		<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>Book Title</th>
+						<th>Author</th>
+						<th>Price</th>
+						<th><form action="/action_page.php">
+								<div class="form-group">
+									Sort by: <select class="form-control" id="sel1" name="sellist1">
+										<optgroup>
+											<option>Popularity</option>
+											<option>Author</option>
+											<option>Price Low to High</option>
+											
+											<option>Price High to Low</option>
+										</optgroup>
+									</select>
+								</div>
+							</form></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a href="books/life.html">12 Rules for Life: An Antidote to Chaos</a></td>
+						<td>Jordan B. Peterson</td>
+						<td>$13.99</td>
+						<td><a type="button" href="cartConfirm.html"
+							class="btn btn-info">Add to Cart</a></td>
+					</tr>
+					</tbody>
+				</table>
+		</div>
 	</div>
 </body>
 </html>

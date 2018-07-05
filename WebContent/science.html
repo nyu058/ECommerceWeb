@@ -22,7 +22,7 @@
 		if (input == "") {
 			alert('Search field cannot be empty!');
 			return false;
-		}else{
+		} else {
 			return true;
 		}
 	}
@@ -82,7 +82,19 @@
 						<th>Book Title</th>
 						<th>Author</th>
 						<th>Price</th>
-						<th></th>
+						<th><form action="/action_page.php">
+								<div class="form-group">
+									Sort by: <select class="form-control" id="sel1" name="sellist1">
+										<optgroup>
+											<option>Popularity</option>
+											<option>Author</option>
+											<option>Price Low to High</option>
+											
+											<option>Price High to Low</option>
+										</optgroup>
+									</select>
+								</div>
+							</form></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -91,16 +103,16 @@
 								History of Time</a></td>
 						<td>Stephen Hawking</td>
 						<td>$15</td>
-						<td><a type="button" href="cartConfirm.html" class="btn btn-info">Add
-								to Cart</a></td>
+						<td><a type="button" href="cartConfirm.html"
+							class="btn btn-info">Add to Cart</a></td>
 					</tr>
 					<tr>
 						<td><a href="books/cracking.html">Cracking the Coding
 								Interview</a></td>
 						<td>Gayle Laakmann McDowell</td>
 						<td>$20</td>
-						<td><a type="button" href="cartConfirm.html" class="btn btn-info">Add
-								to Cart</a></td>
+						<td><a type="button" href="cartConfirm.html"
+							class="btn btn-info">Add to Cart</a></td>
 					</tr>
 
 				</tbody>

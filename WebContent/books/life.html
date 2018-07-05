@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>12 Rules for Life: An Antidote to Chaos</title>
+<link rel="stylesheet" href="CSS/Style.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+	function checkEmpty() {
+		var input = document.forms["searchForm"]["search"].value;
+		if (input == "") {
+			alert('Search field cannot be empty!');
+			return false;
+		} else {
+			return true;
+		}
+	}
+</script>
+</head>
+<body>
+	<div class="container">
+		<div class="page-header" style="font-size: 32px; color: #32adff">WHY
+			NOT Bookstore</div>
+		<nav class="navbar navbar-inverse">
+
+
+			<ul class="nav navbar-nav"
+				style="font-size: 20px; text-align: center;">
+
+				<li><a href="../index.html">Home</a></li>
+				<li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories
+						<span class="caret"></span>
+				</a>
+					<ul class="dropdown-menu">
+						<li><a href="../politics.html">Politics</a></li>
+						<li><a href="../history.html">History</a></li>
+						<li><a href="../fiction.html">Fiction</a></li>
+						<li><a href="../health.html">Health</a></li>
+						<li><a href="../science.html">Science</a></li>
+						<li><a href="../kids.html">Kids</a></li>
+
+					</ul></li>
+				<li><a href="contacts.html">Contact</a></li>
+			</ul>
+			<a class="btn btn-info navbar-btn" href="cart.html"> <i
+				class="glyphicon glyphicon-shopping-cart"></i>&nbsp;Cart
+			</a>
+
+
+			<form class="navbar-form navbar-left" name="searchForm"
+				action="search.html" onsubmit="return checkEmpty()">
+
+				<div class="form-group">
+					<input id="search" type="text" class="form-control"
+						placeholder="Search for books...">
+
+					<button type="submit" class="btn btn-default">
+						<i class="glyphicon glyphicon-search"></i>
+					</button>
+				</div>
+			</form>
+		</nav>
+
+
+		<br>
+
+
+		<h2>12 Rules for Life: An Antidote to Chaos</h2>
+		<div class="row ">
+
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+				<h5>Jordan B. Peterson</h5>
+				<p>
+					<b>Category: Health</b>
+				</p>
+				<img src="../img/life.jpg" class="img-responsive"> <br>
+				<br>
+			</div>
+			<div class="well col-lg-6 col-md-6 col-sm-4 col-xs-12">
+
+				<p>What does everyone in the modern world need to know? Renowned
+					psychologist Jordan B. Peterson's answer to this most difficult of
+					questions uniquely combines the hard-won truths of ancient
+					tradition with the stunning revelations of cutting-edge scientific
+					research.</p>
+
+				<p>Humorous, surprising, and informative, Dr. Peterson tells us
+					why skateboarding boys and girls must be left alone, what terrible
+					fate awaits those who criticize too easily, and why you should
+					always pet a cat when you meet one on the street.</p>
+
+				<p>What does the nervous system of the lowly lobster have to
+					tell us about standing up straight (with our shoulders back) and
+					about success in life? Why did ancient Egyptians worship the
+					capacity to pay careful attention as the highest of gods? What
+					dreadful paths do people tread when they become resentful,
+					arrogant, and vengeful? Dr. Peterson journeys broadly, discussing
+					discipline, freedom, adventure, and responsibility, distilling the
+					world's wisdom into 12 practical and profound rules for life. 12
+					Rules for Life shatters the modern commonplaces of science, faith,
+					and human nature while transforming and ennobling the mind and
+					spirit of its listeners.</p>
+
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+				<div class="well" style="text-align: center">
+					<h2>Our Price: $13.99</h2>
+					<h5>In stock: 2</h5>
+					<a class="btn btn-info navbar-btn" href="../cartConfirm.html">
+						<i class="glyphicon glyphicon-shopping-cart"></i>&nbsp;Add To Cart
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="well row">
+				<h3>Related Books:</h3>
+				<div class=" col-md-4 col-sm-6 col-xs-12">
+					<a href="../books/bob.html"><h4>Bob</h4></a> Wendy Mass
+				</div>
+				<div class=" col-md-4 col-sm-6 col-xs-12">
+					<a href="../books/theWildRobot.html"><h4>The Wild Robot
+							Escapes</h4></a> Peter Brown
+				</div>
+				<div class=" col-md-4 col-sm-6 col-xs-12">
+					<a href="books/cracking.html"><h4>Cracking the Coding
+							Interview</h4></a> Gayle Laakmann McDowell
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

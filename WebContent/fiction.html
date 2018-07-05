@@ -81,7 +81,19 @@
 						<th>Book Title</th>
 						<th>Author</th>
 						<th>Price</th>
-						<th></th>
+						<th><form action="/action_page.php">
+								<div class="form-group">
+									Sort by: <select class="form-control" id="sel1" name="sellist1">
+										<optgroup>
+											<option>Popularity</option>
+											<option>Author</option>
+											<option>Price Low to High</option>
+											
+											<option>Price High to Low</option>
+										</optgroup>
+									</select>
+								</div>
+							</form></th>
 					</tr>
 				</thead>
 				<tbody>
