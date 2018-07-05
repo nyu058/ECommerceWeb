@@ -3,7 +3,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width = device-width, initial-scale = 1">
-<title>Kids</title>
+<title>Success</title>
 <link rel="stylesheet" href="CSS/Style.css">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet"
@@ -22,7 +22,7 @@
 		if (input == "") {
 			alert('Search field cannot be empty!');
 			return false;
-		}else{
+		} else {
 			return true;
 		}
 	}
@@ -39,15 +39,16 @@
 				style="font-size: 20px; text-align: center;">
 
 				<li><a href="index.html">Home</a></li>
-				<li class="active"><a class="dropdown-toggle"
-					data-toggle="dropdown" href="#">Categories <span class="caret"></span></a>
+				<li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories
+						<span class="caret"></span>
+				</a>
 					<ul class="dropdown-menu">
 						<li><a href="politics.html">Politics</a></li>
 						<li><a href="history.html">History</a></li>
 						<li><a href="fiction.html">Fiction</a></li>
 						<li><a href="health.html">Health</a></li>
 						<li><a href="science.html">Science</a></li>
-						<li class="active"><a href="kids.html">Kids</a></li>
+						<li><a href="kids.html">Kids</a></li>
 
 					</ul></li>
 				<li><a href="contacts.html">Contact</a></li>
@@ -55,6 +56,9 @@
 			<a class="btn btn-info navbar-btn" href="cart.html"> <i
 				class="glyphicon glyphicon-shopping-cart"></i>&nbsp;Cart
 			</a>
+
+
+
 			<form class="navbar-form navbar-left" name="searchForm"
 				action="search.html" onsubmit="return checkEmpty()">
 
@@ -73,46 +77,20 @@
 		<br>
 
 
-
-
-		<div class="container">
-			<h5>Categories > Kids</h5>
-			<h2>KIDS</h2>
-			<table class="table table-hover">
-				<thead>
-					<tr>
-						<th>Book Title</th>
-						<th>Author</th>
-						<th>Price</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><a type="button" href="books/bob.html">Bob</a></td>
-						<td>Wendy Mass</td>
-						<td>$13.89</td>
-						<td><a type="button" href="cartConfirm.html" class="btn btn-info">Add
-								to Cart</a></td>
-					</tr>
-					<tr>
-						<td><a type="button" href="books/youGoFirst.html">You Go
-								First</a></td>
-						<td>Erin Entrada Kelly</td>
-						<td>$12.40</td>
-						<td><a type="button" href="cartConfirm.html" class="btn btn-info">Add
-								to Cart</a></td>
-					</tr>
-					<tr>
-						<td><a type="button" href="books/theWildRobot.html">The
-								Wild Robot Escapes</a></td>
-						<td>Peter Brown</td>
-						<td>$11.89</td>
-						<td><a type="button" href="cartConfirm.html" class="btn btn-info">Add
-								to Cart</a></td>
-					</tr>
-				</tbody>
-			</table>
+		<div class="body" style="text-align: center">
+			<h2>Your book has added to cart successfully!</h2>
+			<br>
 		</div>
+		<div class="row" style="text-align:center">
+		<div class="col col-md-12" style="display:inline-block">
+			<a class="btn btn-info" href="index.html" style="font-size: 20px">Continue
+				Shopping</a>&nbsp;&nbsp;
+	
+		
+			<a class="btn btn-success" href="cart.html" style="font-size: 20px">View
+				Cart</a>
+		</div>
+		</div>
+	</div>
 </body>
 </html>
