@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Project</title>
+<link rel="stylesheet" href="CSS/Style.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="page-header" style="font-size: 36px">WHY NOT
+			Bookstore</div>
+		<nav class="navbar navbar-inverse">
+
+
+			<ul class="nav navbar-nav"
+				style="font-size: 20px; text-align: center;">
+
+				<li><a href="../index.html">Home</a></li>
+				<li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories
+						<span class="caret"></span>
+				</a>
+					<ul class="dropdown-menu">
+						<li><a href="../politics.html">Politics</a></li>
+						<li><a href="../history.html">History</a></li>
+						<li><a href="../fiction.html">Fiction</a></li>
+						<li><a href="../health.html">Health</a></li>
+						<li><a href="../science.html">Science</a></li>
+						<li><a href="../kids.html">Kids</a></li>
+
+					</ul></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<a class="btn btn-info navbar-btn" href="cart.html"> <i
+				class="glyphicon glyphicon-shopping-cart"></i>&nbsp;Cart
+			</a>
+
+
+
+			<form class="navbar-form navbar-left" action="search.html">
+
+				<div class="form-group">
+					<input id="search" type="text" class="form-control"
+						placeholder="Search for books..." required>
+					<script>
+						document.getElementById('search').setCustomValidity(
+								'Search field cannot be empty!');
+					</script>
+					<button type="submit" class="btn btn-default">
+						<i class="glyphicon glyphicon-search"></i>
+					</button>
+				</div>
+			</form>
+		</nav>
+
+
+		<br>
+
+
+		<h2>A Brief History of Time</h2>
+		<h5>Stephen Hawking</h5>
+		<div class="well col-lg-9 col-md-9 col-sm-9 col-xs-12">
+			<p>#1 NEW YORK TIMES BESTSELLER</p>
+
+			<p>A landmark volume in science writing by one of the great minds
+				of our time, Stephen Hawking's book explores such profound questions
+				as: How did the universe begin -- and what made its start possible?
+				Does time always flow forward? Is the universe unending -- or are
+				there boundaries? Are there other dimensions in space? What will
+				happen when it all ends?</p>
+
+			<p>Told in language we all can understand, A Brief History of
+				Time plunges into the exotic realms of black holes and quarks, of
+				antimatter and "arrows of time," of the big bang and a bigger God --
+				where the possibilities are wondrous and unexpected. With exciting
+				images and profound imagination, Stephen Hawking brings us closer to
+				the ultimate secrets at the very heart of creation.</p>
+		</div>
+		<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+			<img src="../img/time.jpg" height="320px" width="200px" >
+		</div>
+	</div>
+</body>
+</html>
