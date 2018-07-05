@@ -3,7 +3,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width = device-width, initial-scale = 1">
-<title>Cart</title>
+<title>WHY NOT Bookstore</title>
 <link rel="stylesheet" href="CSS/Style.css">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet"
@@ -22,7 +22,7 @@
 		if (input == "") {
 			alert('Search field cannot be empty!');
 			return false;
-		}else{
+		} else {
 			return true;
 		}
 	}
@@ -78,7 +78,44 @@
 
 
 
-		<h1>cart</h1>
+		<h5>
+			<div class="container">
+				<h5>Shopping Cart</h5>
+				<h2>SHOPPING CART</h2>
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>Book Title</th>
+							<th>Author</th>
+							<th>Price</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a type="button" href="books/bob.html">Bob</a></td>
+							<td>Wendy Mass</td>
+							<td>$13.89</td>
+							<td><button type="button" class="btn btn-info">Remove</button></td>
+						</tr>
+						<tr>
+							<td><a type="button" href="books/youGoFirst.html">You Go
+									First</a></td>
+							<td>Erin Entrada Kelly</td>
+							<td>$12.40</td>
+							<td><button type="button" class="btn btn-info">Remove</button></td>
+						</tr>
+						<tr>
+							<td><h3>Total</h3></td>
+							<td></td>
+							<td><h3>$26.29</h3></td>
+							<td><a type="button" class="btn btn-info"
+								href="checkout.html">Checkout</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</h5>
 	</div>
 </body>
 </html>

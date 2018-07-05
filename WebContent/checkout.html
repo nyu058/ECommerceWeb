@@ -3,7 +3,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <meta name="viewport" content="width = device-width, initial-scale = 1">
-<title>Checkout</title>
+<title>WHY NOT Bookstore</title>
 <link rel="stylesheet" href="CSS/Style.css">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet"
@@ -110,8 +110,49 @@
 							<label for="address">Delivery Address: </label> <input
 								type="text" class="form-control" id="address"
 								placeholder="Enter Delivery Address" name="dAddr" required>
+	
+						</div>
+						<div class="form-group col-md-12">
+							<label for="usr">Payment Methods: </label> <label
+								class="radio-inline"> <input type="radio"
+								name="optradio" style="font-size: 36px" required>
+								Mastercard
+							</label> <label class="radio-inline"> <input type="radio"
+								name="optradio" style="font-size: 36px"> VISA
+							</label>
 
 						</div>
+
+						<div class="form-group col-md-12">
+							<label for="card">Card Number: </label> <input
+								type="number" class="form-control" id="address"
+								placeholder="Enter Card Number" name="cnum" required>
+
+						</div>
+							<div class="form-row">
+
+							<div class="form-group col-md-6">
+								<label for="usr">Cardholder First Name:</label> <input type="text"
+									class="form-control" id="usr" placeholder="Enter cardhorlder first name"
+									name="cfname" required>
+
+							</div>
+
+							<div class="form-group col-md-6">
+								<label for="usr">Cardholder Last Name:</label> <input type="text"
+									class="form-control" id="usr" placeholder="Enter cardholder last name"
+									name="clname" required>
+
+							</div>
+							<div class="form-group col-md-6">
+								<label for="usr">CVV:</label> <input type="number"
+									class="form-control" id="usr" placeholder="Enter CVV (Example. 888)"
+									name="cvv" required>
+
+							</div>
+							
+						</div>
+						
 						<div class="form-group col-md-12">
 							<label for="usr">Shipping Options: </label> <label
 								class="radio-inline"> <input type="radio"
@@ -127,12 +168,13 @@
 							<button type="submit" class="btn btn-info">Checkout</button>
 						</div>
 					</form>
+											
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"
 					style="text-align: center">
 					<div class="well">
 						<h3>Your order total:</h3>
-						<h3>$50</h3>
+						<h3>$26.29</h3>
 					</div>
 				</div>
 			</div>
