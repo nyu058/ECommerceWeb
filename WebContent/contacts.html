@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Contacts</title>
+<link rel="stylesheet" href="CSS/Style.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+	function checkEmpty() {
+		var input = document.forms["searchForm"]["search"].value;
+		if (input == "") {
+			alert('Search field cannot be empty!');
+			return false;
+		} else {
+			return true;
+		}
+	}
+</script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="page-header" style="font-size: 32px; color: #32adff">WHY
+			NOT Bookstore</div>
+		<nav class="navbar navbar-inverse">
+
+
+			<ul class="nav navbar-nav"
+				style="font-size: 20px; text-align: center;">
+
+				<li><a href="index.html">Home</a></li>
+				<li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories
+						<span class="caret"></span>
+				</a>
+					<ul class="dropdown-menu">
+						<li><a href="politics.html">Politics</a></li>
+						<li><a href="history.html">History</a></li>
+						<li><a href="fiction.html">Fiction</a></li>
+						<li><a href="health.html">Health</a></li>
+						<li><a href="science.html">Science</a></li>
+						<li><a href="kids.html">Kids</a></li>
+
+					</ul></li>
+				<li class="active"><a href="contacts.html">Contact</a></li>
+			</ul>
+			<a class="btn btn-info navbar-btn" href="cart.html"> <i
+				class="glyphicon glyphicon-shopping-cart"></i>&nbsp;Cart
+			</a>
+			<form class="navbar-form navbar-left" name="searchForm"
+				action="search.html" onsubmit="return checkEmpty()">
+
+				<div class="form-group">
+					<input id="search" type="text" class="form-control"
+						placeholder="Search for books...">
+
+					<button type="submit" class="btn btn-default">
+						<i class="glyphicon glyphicon-search"></i>
+					</button>
+				</div>
+			</form>
+		</nav>
+		<br>
+
+		<div class="row">
+		<div class="col col-xs-offset-4">
+	<h3>Why Not Bookstore Inc.</h3>
+	<h4>TEL: (613) 888-8888</h4>
+			<p>100 Wellington St, <br>Ottawa, ON <br>K1A 0A4 </p>
+			<p><b>Hours:</b><br>
+			Monday ------- 8am-6pm<br> 
+			Tuesday ------ 8am-6pm <br>
+			Wednesday -- 8am-6pm <br>
+			Thursday ----- 8am-6pm <br>
+			Friday --------- 8am-6pm <br>
+			Saturday ---- 10am-4pm <br>
+			Sunday -------- Closed <br>
+		</div>
+</div>
+
+	</div>
+</body>
+</html>
